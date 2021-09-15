@@ -32,7 +32,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .row,
 .col {
   margin: 0;
