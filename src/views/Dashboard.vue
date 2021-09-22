@@ -2,7 +2,7 @@
     <div>
         <div class="page">
             <div class="container-dash">
-                <header class="o-header"><Menu v-if="menu"/></header>
+                <header><Menu class="o-header" v-if="menu"/></header>
                 <main class="o-main"></main>
                 <footer class="o-footer"></footer>
             </div>
@@ -43,7 +43,7 @@
 import Menu from '@/components/Menu.vue'
 
 export default {
-  name: 'FristScreen',
+  name: 'Dashboard',
   components: {
     Menu
   },
