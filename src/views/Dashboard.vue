@@ -2,7 +2,7 @@
     <div>
         <div class="page">
             <div class="container-dash">
-                <header><Menu class="o-header" v-if="menu"/></header>
+                <header class="o-header"><Menu v-if="menu"/></header>
                 <main class="o-main"></main>
                 <footer class="o-footer"></footer>
             </div>
@@ -16,10 +16,11 @@
         display: grid;
         grid-template-areas:
         "header main main"
+        "header main main"
+        "header main main"
         "footer footer footer";
-        grid-template-columns: auto  auto auto;
-        grid-template-rows: auto auto auto;
-        max-width: 1279px;
+        grid-template-columns: 35vh repeat(2 , 83vh);
+        grid-template-rows: repeat(3, 28.35vh) 15vh;
 
         .o-header{
             grid-area: header;
@@ -34,7 +35,6 @@
         .o-footer{
             grid-area: footer;
             background-color: green;
-            height: 20vh;
         }
     }
 </style>

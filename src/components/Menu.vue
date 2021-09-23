@@ -1,5 +1,5 @@
 <template>
-    <div class="container-menu" id="container-menu">
+    <div class="container-menu" id="app">
         <div class="logo">
             <img src="@/assets/img/logo.png" alt="Logo SeeToWork"><p>SeeToWork</p>
         </div>
@@ -14,12 +14,12 @@
 </template>
 
 <script>
-    new Vue({
-        el: '#container-menu',
-        data:{
-            aplicarFundo: false
-        }
-    })
+    // new Vue({
+    //     el: '#app',
+    //     data:{
+    //         aplicarFundo: false
+    //     }
+    // })
 </script>
 
 <style lang="scss" scoped>
@@ -27,12 +27,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: left;
+        padding: 25% 0;
 
         .logo{
             display: flex;
-            width: 120px;
-            flex-direction: rows;
-            justify-content: baseline;
+            width: 180px;
+            flex-direction: column-reverse;
+            align-items: center;
 
             img{
                 width: 100%;
